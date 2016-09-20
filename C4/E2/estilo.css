@@ -16,7 +16,11 @@ body{
     text-align: center;
 }
 
-form:input{
-    text-align: left;
-    font-size: 200px;
+table{
+    margin: auto;
+    border: 5px solid #BDBDBD;
+}
+
+tr, td{
+    border: 5px solid #BDBDBD;
 }

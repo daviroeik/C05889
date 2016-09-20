@@ -7,12 +7,27 @@
     </head>
     <body>
         <div id="wrap">
-            <form action="" method="GET">
-                <p>Favor ingrese las notas:</p>
-                <p>1er Parcial :<input type="text" name='a'></p>
-                <p>2do Parcial :<input type="text" name='b'></p>
-                <p>Final :<input type="text" name='c'></p>
-                <p><button type="submit">Calcular</button></p>
+            <form>
+                <table>
+                    <tr>
+                        <td colspan="2">Favor ingrese las notas:</td>
+                    </tr>
+                    <tr>
+                        <td>1er Parcial:</td>
+                        <td><input type="text" name='a'></td>
+                    </tr>
+                    <tr>
+                        <td>2do Parcial:</td>
+                        <td><input type="text" name='b'></td>
+                    </tr>
+                    <tr>
+                        <td>Final:</td>
+                        <td><input type="text" name='c'></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Calcular</button></td>
+                    </tr>
+                </table>
             </form>
         <div>
         <div id="res">

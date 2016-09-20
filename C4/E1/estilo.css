@@ -16,3 +16,11 @@ body{
     text-align: center;
 }
 
+table{
+    margin: auto;
+    border: 5px solid #BDBDBD;
+}
+
+tr, td{
+    border: 5px solid #BDBDBD;
+}
