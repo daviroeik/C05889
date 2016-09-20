@@ -15,25 +15,17 @@
                     <tr>
                         <td>a</td>
                         <td>=</td>
-                        <td>2</td>
+                        <td><input type="text" name='a'></td>
                     </tr>
                     <tr>
                         <td>b</td>
                         <td>=</td>
-                        <td>3</td>
+                        <td><input type="text" name='b'></td>
                     </tr>
                     <tr>
                         <td>c</td>
                         <td>=</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Ingrese la variable:</td>
-                    </tr>
-                    <tr>
-                        <td>var</td>
-                        <td>=</td>
-                        <td><input type="text" name='var'></td>
+                        <td><input type="text" name='c'></td>
                     </tr>
                     <tr>
                         <td colspan="3"><button type="submit">Calcular</button></td>
@@ -42,20 +34,25 @@
             </form>
         
             <?php
-                $var = $_GET['var'];
+                $a = $_GET['a'];
+                $b = $_GET['b'];
+                $c = $_GET['c'];
 				
-				echo $var;
-				echo "<br/>";
+				echo "$a<br/>";
+                echo "$b<br/>";
+                echo "$c<br/>";
                 
-                define("ca",2);
-                define("cb",3);
-                define("cc",4);
-                
-                if(isset($var))
+                if(isset($a)&&isset($b)&&isset($c))
                 {
-                    $x1 = ( (-cb) + sqrt( (pow(cb, 2)-( 4 * ca * cc ) ) ) ) / ( 2 * ca );
+                    $b2 = pow($b, 2);
+                    $ac =  4 * $a * $c;
+                    $aa = $a * 2;
+                    $b2ac = ($b2 - $ac);
+                    
+                    $x1 = ((-$b) + sqrt($b2ac));
+                    //$x1 = ( (-$b) + sqrt( (pow($b, 2)-( 4 * $a * $c ) ) ) ) / ( 2 * $a );
 	
-                    $x2 = ( (-cb) - sqrt( (pow(cb, 2)-( 4 * ca * cc ) ) ) ) / ( 2 * ca );
+                    $x2 = ( (-$b) - sqrt( (pow($b, 2)-( 4 * $a * $c ) ) ) ) / ( 2 * $a );
                 }
                 
                 echo "X1 es igual a : $x1";
