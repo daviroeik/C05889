@@ -25,18 +25,18 @@
                 
                 $palabra = $_GET['palabra'];
                 
-                if(isset($palabra)
+                if(isset($palabra))
                 {
                     $reverso = strrev($palabra);
                     if($palabra == $reverso)
                     {
-                        echo 'La palabra ingresada es un palindromo :)';
+                        echo 'La palabra ingresada es un palindromo <img src="../extras/yes.png">';
                     }
-                    /*
+                    
                     else
-                    {
-                        echo 'La palabra ingresada no es un palindromo :('       
-                    }*/
+                    
+                        echo 'La palabra ingresada no es un palindromo <img src="../extras/no.png">';
+                    
                 }
             ?>
         <div>

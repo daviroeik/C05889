@@ -24,3 +24,7 @@ table{
 tr, td{
     border: 5px solid #BDBDBD;
 }
+
+img{
+    height: 14px;
+}
