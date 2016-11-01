@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+
+#wrap{
+    height: 160px;
+    width: 500px;
+    background-color: #BDBDBD;
+    margin: auto;
+    padding-top: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+td, tr, table{
+    border: solid grey 2px;
+    border-collapse: collapse;
+    
+}
+
+table{
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    width: 90%;
+}
+
+tr:first-child{
+    font-weight: bold;
+}
