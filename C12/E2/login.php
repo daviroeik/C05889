@@ -12,14 +12,14 @@
                 <table>
                     <tr>
                         <td>Usuario:</td>
-                        <td><input type="text" id="user"></td>
+                        <td><input type="text" id="usuario"></td>
                     </tr>
                     <tr>
                         <td>Contraseña:</td>
-                        <td><input type="password" id="pass"></td>
+                        <td><input type="password" id="clave"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input type="button" value="Ingresar" onclick="validaVacio();"></td>
+                        <td colspan="2"><input type="button" value="Ingresar" onclick=""></td>
                     </tr>
                 </table>               
             </form>
@@ -49,8 +49,27 @@
             include "conexion.php";
             $con=conectar();
             
-            //$result = pg_query($conexion, "SELECT nombre, apellido  FROM persona"); 
-             
+            //$result = pg_query($conexion, "SELECT nombre, apellido  FROM persona");
+           /* 
+            $result = pg_query($con, "SELECT usuario, clave  FROM usuarios");
+            $result = pg_query($con, "SELECT FROM usuarios (usuario, clave) WHERE usuario = $user AND clave = $clave");            
+            if (!$result)
+            {
+              echo "Ocurrió un error.\n";
+              exit;
+            }
+            */
+           
+           function ppp();
+           {
+            $user = $_POST['usuario'];
+            $pass = $_POST['clave'];
+            
+            
+            
+            echo "$user";
+            echo "$clave";
+           }
         ?>
     </body>
 </html>
